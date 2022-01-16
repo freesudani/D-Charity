@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ButtonSmall from "../UI/ButtonSmall";
 import { MenuItems } from "../data/MenuItems";
+import Logo from "../assets/image/454ce6367e2a405c96c5c0158a8b7f48.png";
 import classes from "./Navbar.module.css";
 
 const Navbar = () => {
@@ -12,7 +13,7 @@ const Navbar = () => {
 
   return (
     <nav className={classes.navbarItems}>
-      <h1 className={classes.navbarLogo}>React</h1>
+      <img className={classes.navbarLogo} src={Logo} alt="logo" />
       <div className={classes.menuIcon} onClick={handleClick}>
         <i
           className={clicked ? "fas fa-times" : "fas fa-bars"}

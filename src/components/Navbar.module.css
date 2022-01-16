@@ -1,9 +1,5 @@
 .navbarItems {
-  background: linear-gradient(
-    90deg,
-    rgb(110, 94, 254) 0%,
-    rgba(73, 63, 252, 1) 100%
-  );
+  background: rgb(110, 94, 254);
   height: 8rem;
   display: flex;
   justify-content: center;
@@ -15,6 +11,7 @@
   justify-self: start;
   margin-left: 2rem;
   cursor: pointer;
+  width: 8rem;
 }
 
 .navmenu {
