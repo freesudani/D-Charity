@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import ButtonSmall from "../../UI/ButtonSmall";
-import { MenuItems } from "../../data/MenuItems";
+import ButtonSmall from "../UI/ButtonSmall";
+import { MenuItems } from "../data/MenuItems";
 import classes from "./Navbar.module.css";
 
 const Navbar = () => {
