@@ -1,0 +1,20 @@
+.btnmedium {
+  font-size: 1.1rem;
+  background-color: #3acbf7;
+  padding: 12px 25px;
+  height: 4rem;
+  width: 9rem;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btnmedium:hover {
+  padding: 12px 25px;
+  transition: all 0.3s ease-out;
+  background: #fff;
+  color: #6568f4;
+  border: 1px solid #6568f4;
+  transition: 250ms;
+}
