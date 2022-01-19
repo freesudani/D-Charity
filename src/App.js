@@ -3,6 +3,7 @@ import Guides from "./components/Guides";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import OurWork from "./components/OurWork";
+import Subscribe from "./components/Subscribe";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <OurWork />
       <Guides />
+      <Subscribe />
     </div>
   );
 }
