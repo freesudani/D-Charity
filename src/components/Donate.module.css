@@ -1,0 +1,34 @@
+.donate {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  height: 80vh;
+  margin-top: 35rem;
+}
+
+.form {
+  padding: 2rem;
+}
+
+.data {
+  margin: 2rem auto;
+  width: 100%;
+}
+
+label {
+  display: block;
+}
+
+.data input {
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  width: 60%;
+  height: 2rem;
+}
+
+.datasmall input {
+  margin-top: 0.5rem;
+  margin-bottom: 3rem;
+  border-radius: 5px;
+  width: 30%;
+  height: 2rem;
+}

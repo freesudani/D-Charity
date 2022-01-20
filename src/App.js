@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import OurWork from "./components/OurWork";
 import Subscribe from "./components/Subscribe";
+import Donate from "./components/Donate";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <OurWork />
       <Guides />
       <Subscribe />
+      <Donate />
     </div>
   );
 }
