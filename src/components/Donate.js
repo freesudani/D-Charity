@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "./Donate.module.css";
 import ButtonSmall from "../UI/ButtonSmall";
+import DonateIcon from "../UI/DonateIcon";
 
 const Donate = () => {
   return (
@@ -26,7 +27,9 @@ const Donate = () => {
           <ButtonSmall>Submit</ButtonSmall>
         </form>
       </div>
-      <div className={classes.donateicon}></div>
+      <div className={classes.donateicon}>
+        <DonateIcon />
+      </div>
     </div>
   );
 };

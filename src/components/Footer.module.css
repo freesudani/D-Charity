@@ -1,0 +1,82 @@
+.footer {
+  background: rgb(110, 94, 254);
+  color: #fff;
+  height: 30rem;
+  padding: 1rem;
+}
+
+.header {
+  margin: 1rem;
+}
+
+.sections {
+  display: grid;
+  grid-template-rows: 4fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+.intouch {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-right: 1px solid #000;
+  padding: 1rem;
+}
+
+.career {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-right: 1px solid #000;
+  padding: 1rem;
+}
+
+.account {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-right: 1px solid #000;
+  padding: 1rem;
+}
+
+.policies {
+  grid-column: 4/-1;
+  grid-row: 1/2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  padding: 1rem;
+}
+
+.socialmedia {
+  grid-column: 1/-1;
+  grid-row: 2/3;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+  border-top: 1px solid #000;
+}
+
+.socialmedia h3 {
+  margin-right: 1rem;
+}
+
+.footericons {
+  margin: 0.5rem;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+
+.facebook {
+  color: #4267b2;
+}

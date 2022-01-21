@@ -21,7 +21,7 @@ label {
 .data input {
   margin-top: 0.5rem;
   border-radius: 5px;
-  width: 60%;
+  width: 65%;
   height: 2rem;
 }
 
@@ -31,4 +31,10 @@ label {
   border-radius: 5px;
   width: 30%;
   height: 2rem;
+}
+
+.donateicon {
+  width: 25rem;
+  margin-right: 6rem;
+  margin-top: 4rem;
 }
