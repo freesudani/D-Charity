@@ -1,7 +1,7 @@
 import React from "react";
 import HeaderImage from "../assets/image/pexels-branimir-balogović-3959485 (1).jpg";
 import classes from "./Header.module.css";
-import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
+import { FaQuoteLeft } from "react-icons/fa";
 
 const Header = () => {
   return (

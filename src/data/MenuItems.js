@@ -1,6 +1,6 @@
 export const MenuItems = [
-  { title: "Home", path: "#" },
-  { title: "Services", path: "#" },
-  { title: "Contact Us", path: "#" },
-  { title: "Sign Up", path: "#" },
+  { title: "Our Work", path: "ourwork" },
+  { title: "Guide", path: "guide" },
+  { title: "Donate", path: "donate" },
+  { title: "Contact Us", path: "contactus" },
 ];

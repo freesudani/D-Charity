@@ -5,7 +5,7 @@ import DonateIcon from "../UI/DonateIcon";
 
 const Donate = () => {
   return (
-    <div className={classes.donate}>
+    <div className={classes.donate} id="donate">
       <div className={classes.form}>
         <form>
           <div className={classes.data}>

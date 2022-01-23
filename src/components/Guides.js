@@ -12,7 +12,7 @@ import { IconContext } from "react-icons";
 const Guides = () => {
   return (
     <IconContext.Provider value={{ size: "4rem" }}>
-      <div className={classes.section}>
+      <div className={classes.section} id="guide">
         <div className={classes.guides1}>
           <div className={classes.guide}>
             <div className={classes.icon}>

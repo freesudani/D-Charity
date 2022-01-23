@@ -4,7 +4,7 @@ import ButtonMedium from "../UI/ButtonMedium";
 
 const OurWork = () => {
   return (
-    <div className={classes.ourwork}>
+    <div className={classes.ourwork} id="ourwork">
       <div className={classes.description}>
         <h2>
           D-Charity connects donors, and nonprofit organizations all over the

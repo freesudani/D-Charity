@@ -6,7 +6,7 @@ import { IconContext } from "react-icons";
 const Footer = () => {
   return (
     <IconContext.Provider value={{ color: "#fff", size: "1.5rem" }}>
-      <div className={classes.footer}>
+      <div className={classes.footer} id="contactus">
         <h1 className={classes.header}>D-Charity Institution</h1>
         <div className={classes.sections}>
           <div className={classes.intouch}>

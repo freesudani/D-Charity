@@ -4,8 +4,11 @@ import { MenuItems } from "../data/MenuItems";
 import Logo from "../assets/image/454ce6367e2a405c96c5c0158a8b7f48.png";
 import classes from "./Navbar.module.css";
 
+import { Link } from "react-scroll";
+
 const Navbar = () => {
   const [clicked, setClicked] = useState(false);
+  const [showForm, setShowForm] = useState(false);
 
   const handleClick = () => {
     setClicked(!clicked);
@@ -26,14 +29,25 @@ const Navbar = () => {
         {MenuItems.map((item, index) => {
           return (
             <li key={index}>
-              <a className={classes.navLinks} href={item.path}>
+              <Link
+                to={item.path}
+                smooth={true}
+                duration={500}
+                className={classes.navLinks}
+              >
                 {item.title}
-              </a>
+              </Link>
             </li>
           );
         })}
       </ul>
-      <ButtonSmall>Sign Up</ButtonSmall>
+      <ButtonSmall
+        onClick={() => {
+          setShowForm(true);
+        }}
+      >
+        Sign Up
+      </ButtonSmall>
     </nav>
   );
 };
