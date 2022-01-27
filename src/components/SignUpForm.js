@@ -16,9 +16,9 @@ const SignupOverlay = (props) => {
         <input name="email" placeholder="email" />
         <input name="password" placeholder="password" />
         <input name="password" placeholder="Confirm password" />
-        <ButtonSmall className={classes.signUpSubmit} onClick={props.onShow}>
-          Submit
-        </ButtonSmall>
+        <div className={classes.signUpSubmit}>
+          <ButtonSmall onClick={props.onShow}>Submit</ButtonSmall>
+        </div>
       </form>
       <p>
         Aleady have an account? <br />

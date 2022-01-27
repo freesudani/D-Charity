@@ -8,13 +8,9 @@
   background: rgba(0, 0, 0, 0.75);
 }
 
-form {
-  width: 100%;
-}
-
-.loginBox {
+.aboutusbox {
   width: 50%;
-  text-align: center;
+  text-align: justify;
   position: fixed;
   left: 50%;
   transform: translate(-50%, 20%);
@@ -24,18 +20,12 @@ form {
   z-index: 100;
 }
 
-input {
-  width: 60%;
-  margin: 1.5rem auto;
-  border: none;
-  border-bottom: solid 1px rgb(110, 94, 254);
+.aboutusheader {
+  margin: 0.5rem auto;
+  text-align: center;
 }
 
-input:focus {
-  outline: none;
-}
-
-.signUpSubmit {
-  margin: 25px 0 15px 0;
-  display: block;
+.aboutusbutton {
+  margin: 1rem auto;
+  text-align: center;
 }
