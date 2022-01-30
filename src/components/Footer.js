@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import classes from "./Footer.module.css";
 import { SiFacebook, SiTwitter, SiInstagram, SiLinkedin } from "react-icons/si";
 import { IconContext } from "react-icons";
+import CareerOpportunities from "./CareerOpportunities";
 
 const Footer = () => {
+  const [showCareers, setShowCareers] = useState(false);
+
+  const displayCareersHandler = () => {
+    setShowCareers(true);
+  };
+
+  const hideCareersHandler = () => {
+    setShowCareers(false);
+  };
+
   return (
     <IconContext.Provider value={{ color: "#fff", size: "1.5rem" }}>
       <div className={classes.footer} id="contactus">
@@ -20,7 +31,7 @@ const Footer = () => {
           <div className={classes.career}>
             <h3>Work With us</h3>
             <div>
-              <a>Career opportunities</a>
+              <a onClick={displayCareersHandler}>Career opportunities</a>
             </div>
             <div>
               <a>Volunteer Opportunities</a>
@@ -69,6 +80,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      {showCareers && <CareerOpportunities onHide={hideCareersHandler} />}
     </IconContext.Provider>
   );
 };

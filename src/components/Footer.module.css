@@ -80,3 +80,7 @@
 .facebook {
   color: #4267b2;
 }
+
+a {
+  cursor: pointer;
+}
