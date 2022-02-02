@@ -1,5 +1,6 @@
 export const CareerList = [
   {
+    id: 1,
     title: "Junior Accountant",
     salary: "1500$",
     jobDescription: [
@@ -15,6 +16,7 @@ export const CareerList = [
     ],
   },
   {
+    id: 2,
     title: "Research Analyst",
     salary: "3500$",
     jobDescription: [
@@ -28,6 +30,7 @@ export const CareerList = [
     ],
   },
   {
+    id: 3,
     title: "Receptionist",
     salary: "1200$",
     jobDescription: [
@@ -43,6 +46,7 @@ export const CareerList = [
     ],
   },
   {
+    id: 4,
     title: "Public Relationship Manager",
     salary: "5000$",
     jobDescription: [

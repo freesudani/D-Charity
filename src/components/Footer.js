@@ -3,9 +3,12 @@ import classes from "./Footer.module.css";
 import { SiFacebook, SiTwitter, SiInstagram, SiLinkedin } from "react-icons/si";
 import { IconContext } from "react-icons";
 import CareerOpportunities from "./CareerOpportunities";
+import SignUpForm from "./SignUpForm";
 
 const Footer = () => {
   const [showCareers, setShowCareers] = useState(false);
+  const [showJobDetails, setShowJobDetails] = useState(false);
+  const [showSignUp, setShowSignUp] = useState(false);
 
   const displayCareersHandler = () => {
     setShowCareers(true);
@@ -13,6 +16,14 @@ const Footer = () => {
 
   const hideCareersHandler = () => {
     setShowCareers(false);
+  };
+
+  const displaySignUpHandler = () => {
+    setShowSignUp(true);
+  };
+
+  const hideSignUpHandler = () => {
+    setShowSignUp(false);
   };
 
   return (
@@ -40,7 +51,7 @@ const Footer = () => {
           <div className={classes.account}>
             <h3>Your Account</h3>
             <div>
-              <a>Sign in/register</a>
+              <a onClick={displaySignUpHandler}>Sign in/register</a>
             </div>
             <div>
               <a>Get our email newsletter</a>
@@ -80,7 +91,13 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      {showCareers && <CareerOpportunities onHide={hideCareersHandler} />}
+      {showCareers && (
+        <CareerOpportunities
+          onHide={hideCareersHandler}
+          onShow={displayCareersHandler}
+        />
+      )}
+      {showSignUp && <SignUpForm onHide={hideSignUpHandler} />}
     </IconContext.Provider>
   );
 };

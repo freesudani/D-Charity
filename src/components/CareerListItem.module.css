@@ -1,0 +1,6 @@
+.jobItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem auto;
+}

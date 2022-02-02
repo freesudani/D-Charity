@@ -3,8 +3,8 @@ import reactDom from "react-dom";
 import classes from "./SignUpForm.module.css";
 import ButtonSmall from "../UI/ButtonSmall";
 
-const Backdrop = (prop) => {
-  return <div className={classes.backdrop}></div>;
+const Backdrop = (props) => {
+  return <div className={classes.backdrop} onClick={props.onHide}></div>;
 };
 
 const SignupOverlay = (props) => {
@@ -31,7 +31,10 @@ const SignupOverlay = (props) => {
 const SignUpForm = (props) => {
   return (
     <>
-      {reactDom.createPortal(<Backdrop />, document.getElementById("backdrop"))}
+      {reactDom.createPortal(
+        <Backdrop onHide={props.onHide} />,
+        document.getElementById("backdrop")
+      )}
       {reactDom.createPortal(
         <SignupOverlay onShow={props.onShow} />,
         document.getElementById("sign-up")

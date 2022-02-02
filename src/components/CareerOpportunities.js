@@ -2,24 +2,21 @@ import React from "react";
 import reactDom from "react-dom";
 import classes from "./CareerOpportunities.module.css";
 import { CareerList } from "../data/Careers";
-import ButtonMedium from "../UI/ButtonMedium";
+import CareerListItem from "./CareerListItem";
 
 const Backdrop = (props) => {
   return <div className={classes.backdrop} onClick={props.onHide}></div>;
 };
 
-const CareerOverlay = (props) => {
+const CareerOverlay = () => {
   return (
-    <div className={classes.careerBox}>
-      {CareerList.map((job, index) => {
-        return (
-          <div className={classes.jobItem} key={index}>
-            <h2>{job.title}</h2>
-            <ButtonMedium>Job Detail</ButtonMedium>
-          </div>
-        );
-      })}
-    </div>
+    <>
+      <div className={classes.careerBox}>
+        {CareerList.map((job, index) => {
+          return <CareerListItem job={job} key={index} />;
+        })}
+      </div>
+    </>
   );
 };
 
