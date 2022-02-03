@@ -84,3 +84,23 @@
 a {
   cursor: pointer;
 }
+
+@media screen and (max-width: 800px) {
+  .footer {
+    height: 23.7rem;
+    padding: 0.5rem;
+  }
+  .header {
+    margin: 0.5rem;
+  }
+  .sections {
+    grid-template-rows: 3fr 1fr;
+  }
+  .intouch .career .account .policies .socialmedia {
+    padding: 0.5rem;
+  }
+
+  .socialmedia h3 {
+    margin-right: 0.5rem;
+  }
+}

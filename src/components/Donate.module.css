@@ -6,7 +6,7 @@
   margin-bottom: 10rem;
 }
 
-.form {
+form {
   padding: 2rem;
 }
 
@@ -38,4 +38,31 @@ label {
   width: 25rem;
   margin-right: 6rem;
   margin-top: 7rem;
+}
+
+@media screen and (max-width: 800px) {
+  .donate {
+    margin-top: 25rem;
+    margin-bottom: 10rem;
+  }
+  form {
+    margin-top: 2.5rem;
+    padding: 1.5rem;
+  }
+  .data {
+    margin: 1.5rem auto;
+  }
+  .data input {
+    margin-top: 0.3rem;
+    width: 90%;
+  }
+  .datasmall input {
+    margin-top: 0.3rem;
+    width: 40%;
+  }
+  .donateicon {
+    width: 20rem;
+    margin-right: 3rem;
+    margin-top: 7rem;
+  }
 }

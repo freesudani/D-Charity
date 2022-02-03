@@ -33,3 +33,16 @@
 .button {
   margin-top: 1rem;
 }
+
+@media screen and (max-width: 800px) {
+  .section {
+    transform: skewY(1deg);
+  }
+  .text {
+    transform: skewY(-1deg);
+    font-size: 1.3rem;
+  }
+  .image {
+    width: 18rem;
+  }
+}
