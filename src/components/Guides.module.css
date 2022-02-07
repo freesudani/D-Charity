@@ -62,3 +62,77 @@
 .details li {
   text-align: left;
 }
+
+@media screen and (max-width: 800px) {
+  .section {
+    margin: 3rem auto;
+  }
+
+  .guide {
+    padding: 0.3rem;
+    border-radius: 3px;
+    width: 15rem;
+    margin: 0.5rem auto;
+  }
+
+  .icon {
+    text-align: center;
+    margin: 0.5rem auto;
+    width: 4rem;
+  }
+
+  .image {
+    width: 2rem;
+  }
+
+  .title {
+    margin: 0.5rem auto;
+  }
+
+  .details {
+    margin: 0.3rem auto 0.3rem 0rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .guides1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .guides2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .section {
+    margin: -0.5rem auto 1rem 8rem;
+  }
+  .guides1 {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
+  .guides2 {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .guide {
+    height: 18rem;
+    width: 100vw;
+    margin: 1rem auto;
+    transition: all 0.5s ease;
+    cursor: pointer;
+  }
+
+  .icon {
+    margin: 1rem auto;
+  }
+
+  .title {
+    margin: 0.5rem auto;
+  }
+}

@@ -37,6 +37,7 @@
 @media screen and (max-width: 800px) {
   .section {
     transform: skewY(1deg);
+    justify-content: center;
   }
   .text {
     transform: skewY(-1deg);
@@ -44,5 +45,55 @@
   }
   .image {
     width: 18rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .section {
+    transform: skewY(0.8deg);
+    justify-content: center;
+  }
+  .text {
+    transform: skewY(-0.8deg);
+  }
+  .image {
+    display: none;
+  }
+
+  .text h5 {
+    text-align: center;
+  }
+  .text h3 {
+    text-align: center;
+  }
+
+  .text h1 {
+    text-align: center;
+  }
+
+  .button {
+    margin-left: 5rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .section {
+    width: 132vw;
+    height: 79vh;
+    transform: skewY(0.7deg);
+  }
+
+  .text {
+    transform: skewY(-0.7deg);
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .section {
+    height: 90vh;
+  }
+
+  .button {
+    margin-left: 3rem;
   }
 }

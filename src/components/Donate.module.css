@@ -66,3 +66,42 @@ label {
     margin-top: 7rem;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .donate {
+    grid-template-columns: 1fr;
+    position: relative;
+  }
+
+  .donateicon {
+    width: 10rem;
+    position: absolute;
+    top: 18rem;
+    left: 23rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .data input {
+    width: 100%;
+  }
+  .datasmall input {
+    width: 50%;
+  }
+
+  .donateicon {
+    width: 8rem;
+
+    top: 19rem;
+    left: 22rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .donate {
+    margin-top: 28rem;
+  }
+  .donateicon {
+    left: 20rem;
+  }
+}

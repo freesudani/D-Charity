@@ -57,3 +57,60 @@
 .unit {
   margin-top: 0.2rem;
 }
+
+@media screen and (max-width: 800px) {
+  .ourwork {
+    grid-template-rows: 2fr 0.6fr;
+  }
+
+  .description {
+    margin: 3rem auto 2rem auto;
+    width: 60%;
+  }
+
+  .description h2 {
+    margin-bottom: 1.5rem;
+  }
+
+  .statistics {
+    height: 20vh;
+  }
+
+  .statistic {
+    font-size: 1.2rem;
+  }
+
+  .unit {
+    margin-top: 0.1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .ourwork {
+    grid-template-rows: 2fr 1.5fr;
+  }
+
+  .description h2 {
+    margin-bottom: 1rem;
+  }
+
+  .statistics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 0.5fr);
+    height: 45vh;
+  }
+
+  .statistic {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .description {
+    width: 80%;
+  }
+  .ourwork {
+    width: 132vw;
+  }
+}
