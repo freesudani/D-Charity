@@ -29,3 +29,36 @@
   margin: 1rem auto;
   text-align: center;
 }
+
+@media screen and (max-width: 800px) {
+  .aboutusbox {
+    width: 70%;
+    transform: translate(-50%, 5%);
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .aboutusbox {
+    width: 85%;
+    transform: translate(-50%, 5%);
+    padding: 7px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .backdrop {
+    height: 155vh;
+  }
+  .aboutusbox {
+    width: 85%;
+    transform: translate(-50%, 10%);
+    padding: 7px;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  .aboutusbox {
+    width: 95%;
+  }
+}

@@ -17,7 +17,7 @@ form {
   text-align: center;
   position: fixed;
   left: 50%;
-  transform: translate(-50%, 20%);
+  transform: translate(-50%, 10%);
   padding: 20px;
   background-color: white;
   box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.4);
@@ -38,4 +38,44 @@ input:focus {
 .signUpSubmit {
   margin: 25px 0 15px 0;
   display: block;
+}
+
+@media screen and (max-width: 800px) {
+  .loginBox {
+    width: 50%;
+    transform: translate(-80%, 5%);
+    padding: 10px;
+  }
+
+  .loginBox h1 {
+    margin-bottom: -50px;
+  }
+
+  input {
+    width: 80%;
+    margin: 1rem auto;
+  }
+
+  .signUpSubmit {
+    margin: 15px 0 5px 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .loginBox {
+    width: 65%;
+    transform: translate(-72%, 5%);
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .backdrop {
+    height: 150vh;
+  }
+
+  .loginBox {
+    padding: 5px;
+    top: 5px;
+  }
 }
