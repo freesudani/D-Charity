@@ -2,7 +2,8 @@ import React, { useRef } from "react";
 import classes from "./Donate.module.css";
 import ButtonMedium from "../UI/ButtonMedium";
 import DonateIcon from "../UI/DonateIcon";
-import { db } from "../firebase";
+import db from "./firebase";
+import { collection, addDoc } from "firebase/firestore";
 
 const Donate = () => {
   const nameInputRef = useRef();
@@ -10,7 +11,7 @@ const Donate = () => {
   const phoneInputRef = useRef();
   const amountInputRef = useRef();
 
-  const donateSubmitHandler = (event) => {
+  const donateSubmitHandler = async (event) => {
     event.preventDefault();
 
     const enteredName = nameInputRef.current.value;
@@ -20,19 +21,17 @@ const Donate = () => {
 
     // optional: Add validation
 
-    db.collection("donations")
-      .add({
+    try {
+      const docRef = await addDoc(collection(db, "donations"), {
         Name: enteredName,
         Email: enteredEmail,
         Phune: enteredPhone,
         Amount: enetredAmount,
-      })
-      .then(() => {
-        alert("Donation has been recieved");
-      })
-      .catch((error) => {
-        alert(error.message);
       });
+      console.log("Document written with ID: ", docRef.id);
+    } catch (e) {
+      console.error("Error adding document: ", e);
+    }
   };
 
   return (
