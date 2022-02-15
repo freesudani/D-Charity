@@ -8,7 +8,11 @@ const Subscribe = () => {
   const [showForm, setShowForm] = useState(false);
 
   const showFormhandler = () => {
-    setShowForm(!showForm);
+    setShowForm(true);
+  };
+
+  const hideFormhandler = () => {
+    setShowForm(false);
   };
 
   return (
@@ -30,7 +34,9 @@ const Subscribe = () => {
           <img src={Logo} alt="logo" className={classes.image} />
         </div>
       </div>
-      {showForm && <SignUpForm onShow={setShowForm} />}
+      {showForm && (
+        <SignUpForm onShow={showFormhandler} onHide={hideFormhandler} />
+      )}
     </>
   );
 };

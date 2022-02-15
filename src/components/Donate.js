@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import classes from "./Donate.module.css";
 import ButtonMedium from "../UI/ButtonMedium";
 import DonateIcon from "../UI/DonateIcon";
-import db from "./firebase";
+import { db } from "./firebase";
 import { collection, addDoc } from "firebase/firestore";
 
 const Donate = () => {
@@ -28,9 +28,9 @@ const Donate = () => {
         Phune: enteredPhone,
         Amount: enetredAmount,
       });
-      console.log("Document written with ID: ", docRef.id);
+      alert(`Donation with ID: ${docRef.id} has been submitted`);
     } catch (e) {
-      console.error("Error adding document: ", e);
+      alert(`Error adding donation: ${e}`);
     }
   };
 

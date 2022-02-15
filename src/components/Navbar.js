@@ -16,7 +16,11 @@ const Navbar = () => {
   };
 
   const showFormhandler = () => {
-    setShowForm(!showForm);
+    setShowForm(true);
+  };
+
+  const hideFormhandler = () => {
+    setShowForm(false);
   };
 
   return (
@@ -51,7 +55,7 @@ const Navbar = () => {
         </ul>
         <ButtonSmall onClick={showFormhandler}>Sign Up</ButtonSmall>
       </nav>
-      {showForm && <SignUpForm onShow={setShowForm} />}
+      {showForm && <SignUpForm onShow={setShowForm} onHide={hideFormhandler} />}
     </>
   );
 };

@@ -3,7 +3,7 @@ import classes from "./ButtonMedium.module.css";
 
 const ButtonMedium = (props) => {
   return (
-    <button className={classes.btnmedium} onClick={props.onClick}>
+    <button className={classes.btnmedium} onClick={props.onClick} type="button">
       {props.children}
     </button>
   );

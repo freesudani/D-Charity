@@ -1,5 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
+import { getAuth } from "firebase/auth";
 
 const firebaseApp = initializeApp({
   apiKey: "AIzaSyD0zY_MM9sLCXmj54PGGmFRKEmmiv5Qy48",
@@ -7,6 +8,6 @@ const firebaseApp = initializeApp({
   projectId: "d-charity-52e65",
 });
 
-const db = getFirestore(firebaseApp);
+export const db = getFirestore(firebaseApp);
 
-export default db;
+export const auth = getAuth(firebaseApp);

@@ -3,8 +3,8 @@ import ButtonSmall from "../UI/ButtonSmall";
 import reactDom from "react-dom";
 import classes from "./AboutUs.module.css";
 
-const Backdrop = (prop) => {
-  return <div className={classes.backdrop}></div>;
+const Backdrop = (props) => {
+  return <div className={classes.backdrop} onClick={props.onHide}></div>;
 };
 
 const AboutUsOverlay = (props) => {
@@ -31,7 +31,7 @@ const AboutUsOverlay = (props) => {
       </p>
 
       <div className={classes.aboutusbutton}>
-        <ButtonSmall onClick={props.onShow}>Close</ButtonSmall>
+        <ButtonSmall onClick={props.onHide}>Close</ButtonSmall>
       </div>
     </div>
   );
@@ -40,9 +40,12 @@ const AboutUsOverlay = (props) => {
 const AboutUs = (props) => {
   return (
     <>
-      {reactDom.createPortal(<Backdrop />, document.getElementById("backdrop"))}
       {reactDom.createPortal(
-        <AboutUsOverlay onShow={props.onShow} />,
+        <Backdrop onHide={props.onHide} />,
+        document.getElementById("backdrop")
+      )}
+      {reactDom.createPortal(
+        <AboutUsOverlay onHide={props.onHide} />,
         document.getElementById("About-us")
       )}
     </>

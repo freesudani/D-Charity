@@ -54,7 +54,9 @@ const OurWork = () => {
           </div>
         </div>
       </div>
-      {showAboutUs && <AboutUs onShow={hideAboutUsHandler} />}
+      {showAboutUs && (
+        <AboutUs onShow={hideAboutUsHandler} onHide={hideAboutUsHandler} />
+      )}
     </>
   );
 };
